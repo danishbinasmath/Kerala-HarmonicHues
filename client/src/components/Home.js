@@ -1,5 +1,6 @@
 import React from 'react';
 import './design.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -23,7 +24,7 @@ function Home() {
                     <h1>Welcome to Kerala HarmonicHues</h1>
                     <h2>ഹാർമോണിക്ക്‌ഹ്യൂസിലേക്ക് സ്വാഗതം</h2>
                     <p>Our platform is build to make the daily life of the people kerala easy.</p>
-                    <a href="#" className="btn btn-primary">Get Started</a>
+                    <Link to="/Cards" className="btn btn-primary">Get Started</Link>
                 </div>
             </section>
 
@@ -58,7 +59,7 @@ function Home() {
 
             <footer className="footer">
                 <div className="container">
-                    <p>&copy; 2023 Smart Energy Management System</p>
+                    <p>&copy; Kerala HarmonicHues</p>
                 </div>
             </footer>
         </>
