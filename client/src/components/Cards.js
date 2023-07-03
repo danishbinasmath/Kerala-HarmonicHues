@@ -66,7 +66,7 @@ export default function ActionAreaCard() {
                 KSRTC Schedule
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                To check bus timings of KSRTC and also to book Bus tickets.
+                To check Bus timings of KSRTC and also to book Bus tickets.
               </Typography>
             </CardContent>
           </CardActionArea>
