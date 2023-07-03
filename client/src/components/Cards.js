@@ -9,6 +9,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import SearchIconWrapper from '@mui/icons-material/Search';
 import StyledInputBase from '@mui/material/InputBase';
 import asapLogo from './asap-logo.png';
+import ksrtc from './ksrtc-logo.jpg'
 
 export default function ActionAreaCard() {
   return (
@@ -31,12 +32,14 @@ export default function ActionAreaCard() {
       <div className="cards-container"> {/* Added a container for the cards */}
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
+            
+              <CardMedia
+                component="img"
+                height="220"
+                image={asapLogo}
+                alt="ASAP Logo"
+              />
+            
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 Kerala ASAP validation
@@ -50,130 +53,20 @@ export default function ActionAreaCard() {
 
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
+            <a href="https://www.aanavandi.com/"> 
             <CardMedia
               component="img"
-              height="140"
-              image={asapLogo}
+              height="220"
+              image={ksrtc}
               alt="ASAP Logo"
             />
+            </a>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
+                KSRTC Schedule
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-
-        
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-         <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
+                To check bus timings of KSRTC and also to book Bus tickets.
               </Typography>
             </CardContent>
           </CardActionArea>
