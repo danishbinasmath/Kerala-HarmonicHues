@@ -1,0 +1,31 @@
+.asap-container {
+    background-color: #e91d1d;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .asap-field {
+    margin: 8px 0;
+    color: red;
+  }
+  
+  .asap-subsection {
+    background-color: #932b2b;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .asap-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .asap-list-item {
+    margin-bottom: 5px;
+  }
+  
+  /* Add more CSS styles as needed */
+  
