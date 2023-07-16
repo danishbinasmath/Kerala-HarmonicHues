@@ -31,26 +31,26 @@ export default function ActionAreaCard() {
       </div>
 
       <div className="cards-container"> 
-      <Card sx={{ maxWidth: 345 }}>
-      <Link to="/asap" style={{ textDecoration: 'none', color: 'inherit' }}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="220"
-            image={asapLogo}
-            alt="ASAP Logo"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Kerala ASAP validation
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Link>
-    </Card>
+        <Card sx={{ maxWidth: 345 }}>
+        <Link to="/Asap" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="220"
+              image={asapLogo}
+              alt="ASAP Logo"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Kerala ASAP validation
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Link>
+        </Card>
 
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
