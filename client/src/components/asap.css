@@ -1,3 +1,27 @@
+.asap-css {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1
+ {
+  font-size: 100px;
+ }
+
+ p{
+  font-size: 50px;
+ }
+
+ input {
+  font-size: 30px;
+  background-color: rgb(6, 6, 6);
+  color: white;
+  
+ }
+
+
+
 .asap-container {
     background-color: #e91d1d;
     padding: 20px;
