@@ -15,6 +15,8 @@ const Asap = () => {
     e.preventDefault();
 
     dispatch(addNewTodo(text));
+
+    setText('');
   }
 
   const onInputChange = (e) => {
@@ -32,6 +34,7 @@ const Asap = () => {
           placeholder='Enter something'
           className='input'
           onChange={onInputChange}
+          value={text}
         />
       </form>
     </div>
