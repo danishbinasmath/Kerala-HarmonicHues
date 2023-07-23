@@ -1,15 +1,24 @@
 import {useState, React} from 'react';
+
 import './asap.css';
+
+import {useDispatch} from 'react-redux';
+
+import { addNewTodo } from '../redux/actions';
 
 const Asap = () => {
   const [text, setText] = useState("");
 
-  const onFormSubmit = () => {
+  const dispatch = useDispatch();
 
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+
+    dispatch(addNewTodo(text));
   }
 
-  const onInputChange = () => {
-    
+  const onInputChange = (e) => {
+    setText(e.target.value);
   }
  
   return (

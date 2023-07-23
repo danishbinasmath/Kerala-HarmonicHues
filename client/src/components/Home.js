@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
             <nav className="navbar">
-                <div className="container">
+                {/* <div className="container">
                     <div className="navbar-brand">
                         <a href="#">Kerala HarmonicHues</a>
                     </div>
@@ -16,7 +16,7 @@ function Home() {
                         <li className="nav-item"><a href="#">Services</a></li>
                         <li className="nav-item"><a href="#">Contact</a></li>
                     </ul>
-                </div>
+                </div> */}
             </nav>
 
             <section className="hero">
