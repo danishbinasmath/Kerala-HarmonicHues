@@ -15,9 +15,14 @@ import { Link } from 'react-router-dom';
 export default function ActionAreaCard() {
   return (
     <>
+
+      <button><Link to="/" className='backbutton'>Home Page</Link></button>
+      
+
       <div>
         <h1 className='heading'>Kerala HarmonicHues</h1>
       </div>
+
 
       <div className="search-input-container">
         <SearchIconWrapper>
@@ -46,6 +51,27 @@ export default function ActionAreaCard() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Link>
+        </Card>
+
+        <Card sx={{ maxWidth: 345 }}>
+        <Link to="/Quote" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="220"
+              image={asapLogo}
+              alt="ASAP Logo"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Quote of the Day
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                A quote to motivate you
               </Typography>
             </CardContent>
           </CardActionArea>
