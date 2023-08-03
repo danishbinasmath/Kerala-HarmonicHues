@@ -9,7 +9,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import SearchIconWrapper from '@mui/icons-material/Search';
 import StyledInputBase from '@mui/material/InputBase';
 import asapLogo from './asap-logo.png';
-import ksrtc from './ksrtc-logo.jpg'
+import ksrtc from './ksrtc-logo.jpg';
+import quoteLogo from './quote-logo.png'
 import { Link } from 'react-router-dom';
 
 export default function ActionAreaCard() {
@@ -63,7 +64,7 @@ export default function ActionAreaCard() {
             <CardMedia
               component="img"
               height="220"
-              image={asapLogo}
+              image={quoteLogo}
               alt="ASAP Logo"
             />
             <CardContent>
@@ -71,7 +72,7 @@ export default function ActionAreaCard() {
                 Quote of the Day
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                A quote to motivate you
+                A quote to motivate you.
               </Typography>
             </CardContent>
           </CardActionArea>
