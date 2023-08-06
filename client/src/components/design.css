@@ -42,7 +42,7 @@
     margin-bottom: 3rem;
 }
 
-.btn {
+.startButton {
     display: inline-block;
     background-color: #4CAF50;
     /* light forest green */
@@ -53,7 +53,7 @@
     font-size: 1.2rem;
 }
 
-.btn:hover {
+.startButton:hover {
     background-color: #3e8e41;
     /* darker green on hover */
 }

@@ -10,19 +10,26 @@ import SearchIconWrapper from '@mui/icons-material/Search';
 import StyledInputBase from '@mui/material/InputBase';
 import asapLogo from './asap-logo.png';
 import ksrtc from './ksrtc-logo.jpg';
-import quoteLogo from './quote-logo.png'
+import quoteLogo from './quote-logo.png';
+import ksebLogo from './kseb-logo.png';
+import rationcardLogo from './rationcard-logo.png';
 import { Link } from 'react-router-dom';
+// import { useState } from 'react';
 
 export default function ActionAreaCard() {
+  
+
   return (
     <>
 
-      <button><Link to="/" className='backbutton'>Home Page</Link></button>
+     {/* //020e1d283ee64b97bf32b788a9f44003 new api key */}
       
 
       <div>
         <h1 className='heading'>Kerala HarmonicHues</h1>
       </div>
+
+      
 
 
       <div className="search-input-container">
@@ -34,29 +41,59 @@ export default function ActionAreaCard() {
           inputProps={{ 'aria-label': 'search' }}
           style={{ backgroundColor: 'white' }}
         />
+
+        {/* <form action="/" >
+          <button className='backbutton'>Home page</button>
+        </form> */}
+
       </div>
 
       <div className="cards-container"> 
-        <Card sx={{ maxWidth: 345 }}>
-        <Link to="/Asap" style={{ textDecoration: 'none', color: 'inherit' }}>
+
+      <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
+            <a href="/News"> 
             <CardMedia
               component="img"
               height="220"
-              image={asapLogo}
-              alt="ASAP Logo"
+              image={null}
+              alt="News Logo"
+              className='ksebCard'
             />
+            </a>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
+                Kerala News
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
+                Latest News About Kerala.
               </Typography>
             </CardContent>
           </CardActionArea>
-        </Link>
         </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <a href="https://wss.kseb.in/selfservices/quickpay"> 
+            <CardMedia
+              component="img"
+              // height="220"
+              image={ksebLogo}
+              alt="ASAP Logo"
+              className='ksebCard'
+            />
+            </a>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                KSEB
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                To pay the bills of Electricity.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+        
 
         <Card sx={{ maxWidth: 345 }}>
         <Link to="/Quote" style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -64,7 +101,7 @@ export default function ActionAreaCard() {
             <CardMedia
               component="img"
               height="220"
-              image={quoteLogo}
+              image ={quoteLogo}
               alt="ASAP Logo"
             />
             <CardContent>
@@ -99,6 +136,51 @@ export default function ActionAreaCard() {
             </CardContent>
           </CardActionArea>
         </Card>
+
+        <Card sx={{ maxWidth: 345 }}>
+        <Link to="/Asap" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="220"
+              image={asapLogo}
+              alt="ASAP Logo"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Kerala ASAP validation
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Link>
+        </Card>
+        
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <a href="https://etso.civilsupplieskerala.gov.in/index.php/c_checkrcard_details"> 
+            <CardMedia
+              component="img"
+              height="220"
+              image={rationcardLogo}
+              alt="ASAP Logo"
+              className='ksebCard'
+            />
+            </a>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Kerala Ration Card
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                To verify Ration Card.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+
+
       </div>
     </>
   );

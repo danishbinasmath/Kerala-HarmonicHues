@@ -27,7 +27,7 @@ const Quote = () => {
             <h1 >Quote of the day</h1>
             <button className="btn-grad" onClick={quoteFun}>Get the Quote</button>
             {quote && <p>{quote}</p>}
-            <h3> By {author}</h3>
+            {author && <h3> By {author}</h3>}
 
         </div>
     )

@@ -26,13 +26,13 @@ const Asap = () => {
   return (
     <>
     <div className='asap-css'>
-      <h1>Hello World</h1>
-      <p>This is to test the working of the page Asap</p>
+      <h1 className='asapH'>Hello World</h1>
+      <p className='asapP'>This is to test the working of the page Asap</p>
       
       <form className='form' onSubmit={onFormSubmit}>
         <input 
           placeholder='Enter something'
-          className='input'
+          className='asapInput'
           onChange={onInputChange}
           value={text}
         />

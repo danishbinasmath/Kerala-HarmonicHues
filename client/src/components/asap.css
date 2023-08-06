@@ -4,16 +4,16 @@
   text-align: center;
 }
 
-h1
+.asapH
  {
   font-size: 100px;
  }
 
- p{
+ .asapP{
   font-size: 50px;
  }
 
- input {
+ .asapInput {
   font-size: 30px;
   background-color: rgb(6, 6, 6);
   color: white;

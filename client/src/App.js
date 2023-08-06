@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Cards from './components/Cards';
 import Asap from './components/Asap';
 import Quote from './components/Quote';
+import News from './components/News';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/cards" element={<Cards />} />
           <Route path="/asap" element={<Asap />} />
           <Route path="/quote" element={<Quote />} /> 
+          <Route path="/news" element={<News />} />
         </Routes>
       </div>
     </Router>
