@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-// import './news.css'
+import './news.css'
 
 const News = () => {
     const [news, setNews] = useState([]);
@@ -30,20 +30,22 @@ const News = () => {
     return (
         <>
             <div className="container my-3">
-                <button className="btn btn-primary" onClick={getNews}> Get News</button>
+                <button className="button-85" onClick={getNews}> Get News</button>
             </div>
 
             <div className="container">
                 <div className="row">
                     {
+                        //used map function to iterate over the articles and also in the use state the intial value is array[].
                         news.map((value) => (
                             <div className="col-3" key={value.url}>
-                                <div className="card" style={{ width: "15rem" }}>
+                                <div className="card cardNews" style={{ width: "20rem" }}>
                                     {value.urlToImage && <img src={value.urlToImage} className="card-img-top" alt="..." />}
                                     <div className="card-body">
                                         <h5 className="card-title"> {value.title}</h5>
-                                        <p className="card-text">{value.description}</p>
-                                        <a href={value.url} className="btn btn-primary">Read More</a>
+                                        <h6 className="card-text">{value.description}</h6>
+                                        <p className="card-text">{value.content}</p>
+                                        <a href={value.url} className="button-85">Read More</a>
                                     </div>
                                 </div>
                             </div>

@@ -12,24 +12,25 @@ import asapLogo from './asap-logo.png';
 import ksrtc from './ksrtc-logo.jpg';
 import quoteLogo from './quote-logo.png';
 import ksebLogo from './kseb-logo.png';
+import newsLogo from './news-logo.png'
 import rationcardLogo from './rationcard-logo.png';
 import { Link } from 'react-router-dom';
 // import { useState } from 'react';
 
 export default function ActionAreaCard() {
-  
+
 
   return (
     <>
 
-     {/* //020e1d283ee64b97bf32b788a9f44003 new api key */}
-      
+      {/* //020e1d283ee64b97bf32b788a9f44003 new api key */}
+
 
       <div>
         <h1 className='heading'>Kerala HarmonicHues</h1>
       </div>
 
-      
+
 
 
       <div className="search-input-container">
@@ -48,18 +49,39 @@ export default function ActionAreaCard() {
 
       </div>
 
-      <div className="cards-container"> 
+      <div className="cards-container">
 
-      <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 }}>
+          <Link to="/Quote" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="220"
+                image={quoteLogo}
+                alt="ASAP Logo"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Quote of the Day
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  A quote to motivate you.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Link>
+        </Card>
+
+        <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
-            <a href="/News"> 
-            <CardMedia
-              component="img"
-              height="220"
-              image={null}
-              alt="News Logo"
-              className='ksebCard'
-            />
+            <a href="/News">
+              <CardMedia
+                component="img"
+                height="220"
+                image={newsLogo}
+                alt="News Logo"
+                className='ksebCard'
+              />
             </a>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -72,16 +94,16 @@ export default function ActionAreaCard() {
           </CardActionArea>
         </Card>
 
-      <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
-            <a href="https://wss.kseb.in/selfservices/quickpay"> 
-            <CardMedia
-              component="img"
-              // height="220"
-              image={ksebLogo}
-              alt="ASAP Logo"
-              className='ksebCard'
-            />
+            <a href="https://wss.kseb.in/selfservices/quickpay">
+              <CardMedia
+                component="img"
+                // height="220"
+                image={ksebLogo}
+                alt="ASAP Logo"
+                className='ksebCard'
+              />
             </a>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -93,38 +115,16 @@ export default function ActionAreaCard() {
             </CardContent>
           </CardActionArea>
         </Card>
-        
-
-        <Card sx={{ maxWidth: 345 }}>
-        <Link to="/Quote" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="220"
-              image ={quoteLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Quote of the Day
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                A quote to motivate you.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Link>
-        </Card>
 
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
-            <a href="https://www.aanavandi.com/"> 
-            <CardMedia
-              component="img"
-              height="220"
-              image={ksrtc}
-              alt="ASAP Logo"
-            />
+            <a href="https://www.aanavandi.com/">
+              <CardMedia
+                component="img"
+                height="220"
+                image={ksrtc}
+                alt="ASAP Logo"
+              />
             </a>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -138,36 +138,36 @@ export default function ActionAreaCard() {
         </Card>
 
         <Card sx={{ maxWidth: 345 }}>
-        <Link to="/Asap" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="220"
-              image={asapLogo}
-              alt="ASAP Logo"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala ASAP validation
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Link>
+          <Link to="/Asap" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="220"
+                image={asapLogo}
+                alt="ASAP Logo"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Kerala ASAP validation
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Link>
         </Card>
-        
+
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
-            <a href="https://etso.civilsupplieskerala.gov.in/index.php/c_checkrcard_details"> 
-            <CardMedia
-              component="img"
-              height="220"
-              image={rationcardLogo}
-              alt="ASAP Logo"
-              className='ksebCard'
-            />
+            <a href="https://etso.civilsupplieskerala.gov.in/index.php/c_checkrcard_details">
+              <CardMedia
+                component="img"
+                height="220"
+                image={rationcardLogo}
+                alt="ASAP Logo"
+                className='ksebCard'
+              />
             </a>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
