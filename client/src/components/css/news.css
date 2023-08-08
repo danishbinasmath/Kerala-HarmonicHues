@@ -1,12 +1,11 @@
 
-
-
-.button-85 {
+.newsButton {
   padding: 0.6em 2em;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
+  color: rgb(0, 0, 0);
+  font-weight: 560;
+  background: white;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -14,9 +13,10 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-decoration: none;
 }
 
-.button-85:before {
+.newsButton:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -56,25 +56,26 @@
   }
 }
 
-.button-85:after {
+.newsButton:after {
   z-index: -1;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #222;
+  background: #f8f6f6;
   left: 0;
   top: 0;
   border-radius: 10px;
 }
 
-.card {
+.cardNews {
   border: 5px solid linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); /* Replace #e2e2e2 with your desired border color */
   box-shadow: 0px 0px 14px -7px #f09819;
   background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  margin-bottom: 20px; 
+
 }
 
-/* Optional: Add some padding to the cards for better appearance */
 .card-body {
   padding: 10px;
 }

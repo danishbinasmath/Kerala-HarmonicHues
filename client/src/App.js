@@ -4,6 +4,8 @@ import Cards from './components/Cards';
 import Asap from './components/Asap';
 import Quote from './components/Quote';
 import News from './components/News';
+import FuelPrice from './components/FuelPrice';
+import PostOffice from './components/PostOffice'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/asap" element={<Asap />} />
           <Route path="/quote" element={<Quote />} /> 
           <Route path="/news" element={<News />} />
+          <Route path="/fuelprice" element={<FuelPrice />} />
+          <Route path="/postoffice" element={<PostOffice />} />
         </Routes>
       </div>
     </Router>

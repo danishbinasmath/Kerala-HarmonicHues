@@ -30,7 +30,7 @@ const News = () => {
     return (
         <>
             <div className="container my-3">
-                <button className="button-85" onClick={getNews}> Get News</button>
+                <button className="newsButton" onClick={getNews}> Click Here to get the Latest News</button>
             </div>
 
             <div className="container">
@@ -45,7 +45,7 @@ const News = () => {
                                         <h5 className="card-title"> {value.title}</h5>
                                         <h6 className="card-text">{value.description}</h6>
                                         <p className="card-text">{value.content}</p>
-                                        <a href={value.url} className="button-85">Read More</a>
+                                        <a href={value.url} className="newsButton">Read More</a>
                                     </div>
                                 </div>
                             </div>
