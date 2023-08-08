@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './design2.css';
+import './css/design2.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,12 +8,14 @@ import { CardActionArea } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import SearchIconWrapper from '@mui/icons-material/Search';
 import StyledInputBase from '@mui/material/InputBase';
-import asapLogo from './asap-logo.png';
-import ksrtc from './ksrtc-logo.jpg';
-import quoteLogo from './quote-logo.png';
-import ksebLogo from './kseb-logo.png';
-import newsLogo from './news-logo.png'
-import rationcardLogo from './rationcard-logo.png';
+import asapLogo from './images/asap-logo.png';
+import ksrtc from './images/ksrtc-logo.jpg';
+import quoteLogo from './images/quote-logo.png';
+import ksebLogo from './images/kseb-logo.png';
+import newsLogo from './images/news-logo.png'
+import fuelpriceLogo from './images/fuelprice-logo.png'
+import rationcardLogo from './images/rationcard-logo.png';
+import postofficeLogo from './images/postoffice-logo.png';
 import { Link } from 'react-router-dom';
 // import { useState } from 'react';
 
@@ -43,10 +45,6 @@ export default function ActionAreaCard() {
           style={{ backgroundColor: 'white' }}
         />
 
-        {/* <form action="/" >
-          <button className='backbutton'>Home page</button>
-        </form> */}
-
       </div>
 
       <div className="cards-container">
@@ -62,10 +60,10 @@ export default function ActionAreaCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Quote of the Day
+                  <h2>Quote of the Day</h2>
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  A quote to motivate you.
+                  <h6>A quote to motivate you.</h6>
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -89,6 +87,50 @@ export default function ActionAreaCard() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 Latest News About Kerala.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <a href="/News">
+              <CardMedia
+                component="img"
+                height="220"
+                image={fuelpriceLogo}
+                alt="News Logo"
+                className='ksebCard'
+              />
+            </a>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Kerala Fuel Prices
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Prices of Petrol, Diesal and LPG of Kerala.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <a href="/News">
+              <CardMedia
+                component="img"
+                height="220"
+                image={postofficeLogo}
+                alt="News Logo"
+                className='ksebCard'
+              />
+            </a>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Kerala Post Office
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Get details of Post Office by searching Postal PIN Code or Post Office Branch Name of Kerala.
               </Typography>
             </CardContent>
           </CardActionArea>
