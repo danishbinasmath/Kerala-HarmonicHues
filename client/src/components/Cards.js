@@ -116,7 +116,7 @@ export default function ActionAreaCard() {
 
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
-            <a href="/News">
+            <a href="/PostOffice">
               <CardMedia
                 component="img"
                 height="220"
