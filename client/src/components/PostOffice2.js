@@ -7,8 +7,12 @@ const PostOffice2 = () => {
     const [postoffice, setPostOffices] = ('');
 
     const getPostOffices = () => {
-        axios.get(`https://api.postalpincode.in/pincode/${PINCODE}`)
+        axios.get(`https://api.postalpincode.in/pincode/${searchQuery}`)
+        .then(res => {
+            setPostOffices()
+        })
     }
+
 
 
     return (
