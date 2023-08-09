@@ -9,8 +9,11 @@ const PostOffice2 = () => {
     const getPostOffices = () => {
         axios.get(`https://api.postalpincode.in/pincode/${searchQuery}`)
         .then(res => {
-            setPostOffices()
+            setPostOffices(res.data[0].PostOffice);
         })
+        .catch(err => {
+            console.log(err);
+        }) 
     }
 
 
