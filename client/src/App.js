@@ -5,7 +5,8 @@ import Asap from './components/Asap';
 import Quote from './components/Quote';
 import News from './components/News';
 import FuelPrice from './components/FuelPrice';
-import PostOffice from './components/PostOffice'
+import PostOffice1 from './components/PostOffice1'
+import PostOffice2 from './components/PostOffice2'
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/quote" element={<Quote />} /> 
           <Route path="/news" element={<News />} />
           <Route path="/fuelprice" element={<FuelPrice />} />
-          <Route path="/postoffice" element={<PostOffice />} />
+          <Route path="/postoffice1" element={<PostOffice1 />} />
+          <Route path="/postoffice2" element={<PostOffice2 />} />
         </Routes>
       </div>
     </Router>

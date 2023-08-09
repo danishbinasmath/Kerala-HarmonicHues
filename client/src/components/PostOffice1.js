@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './css/postoffice.css';
 
-const PostOffice123 = () => {
+const PostOffice1 = () => {
     const [postOffices, setPostOffices] = useState([]);
+    const [searchQuery, setSearchQuery] = useState('');
 
     const getPostOffices = () => {
-        axios.get('https://api.postalpincode.in/postoffice/kerala')
+        axios.get(`https://api.postalpincode.in/postoffice/${searchQuery}`)
             .then(res => {
                 console.log(res.data[0].PostOffice);
                 setPostOffices(res.data[0].PostOffice);
@@ -16,6 +17,10 @@ const PostOffice123 = () => {
             });
     };
 
+    const handleSearch = () => {
+        getPostOffices();
+    }
+
     return (
         <>
             <div className='container postoffice'>
@@ -24,8 +29,11 @@ const PostOffice123 = () => {
                 </div>
 
                 <div className="postofficeSearch">
-                    <input type="text" placeholder="Search details by Post Office branch name" />
-                    <button className="button" onClick={getPostOffices}>Search</button>
+                    <input type="text" 
+                    placeholder="Search details by Post Office branch name"
+                    value = {searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)} />
+                    <button className="button" onClick={handleSearch}>Search</button>
                 </div>
             </div>
 
@@ -55,4 +63,4 @@ const PostOffice123 = () => {
     );
 };
 
-export default PostOffice123;
+export default PostOffice1;
