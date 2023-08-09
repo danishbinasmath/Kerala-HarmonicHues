@@ -16,12 +16,17 @@ const PostOffice2 = () => {
         }) 
     }
 
-
+    const handleRequest = () => {
+        getPostOffices();
+    }
 
     return (
         <>
-            <div>
+            <div onClick={handleRequest}>
+                <input value={searchQuery} onChange={(e) => {setPostOffices(e.value.target)}}></input>
                 <button>To Render</button>
+                <h1>The value</h1>
+                <p>{searchQuery}</p>
             </div>
         </>
     );
