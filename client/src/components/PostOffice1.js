@@ -4,7 +4,7 @@ import './css/postoffice.css';
 
 const PostOffice1 = () => {
     const [postOffices, setPostOffices] = useState([]);
-    const [searchQuery, setSearchQuery] = useState(0);
+    const [searchQuery, setSearchQuery] = useState('');
 
     const getPostOffices = () => {
         axios.get(`https://api.postalpincode.in/postoffice/${searchQuery}`)
