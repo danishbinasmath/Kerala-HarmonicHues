@@ -4,12 +4,12 @@ import './css/postoffice.css';
 
 const PostOffice1 = () => {
     const [postOffices, setPostOffices] = useState([]);
-    const [searchQuery, setSearchQuery] = useState('');
+    const [searchQuery, setSearchQuery] = useState(0);
 
     const getPostOffices = () => {
         axios.get(`https://api.postalpincode.in/postoffice/${searchQuery}`)
             .then(res => {
-                console.log(res.data[0].PostOffice);
+                console.log(res.data[0].PostOffice.Name);
                 setPostOffices(res.data[0].PostOffice);
             })
             .catch(err => {
