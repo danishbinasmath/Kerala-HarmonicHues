@@ -5,9 +5,10 @@ import Asap from './components/Asap';
 import Quote from './components/Quote';
 import News from './components/News';
 import FuelPrice from './components/FuelPrice';
-import PostOffice1 from './components/PostOffice1'
-import PostOffice2 from './components/PostOffice2'
-import PostOffice3 from './components/PostOffice3'
+import PostOffice1 from './components/PostOffice1';
+import PostOffice2 from './components/PostOffice2';
+import PostOffice3 from './components/PostOffice3';
+import KeralaCommunity from './components/KeralaCommunity';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/postoffice3" element={<PostOffice3 />} />
           <Route path="/postoffice1" element={<PostOffice1 />} />
           <Route path="/postoffice2" element={<PostOffice2 />} />
+          <Route path="/keralacommunity" element={<KeralaCommunity />} />
         </Routes>
       </div>
     </Router>
