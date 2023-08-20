@@ -2,15 +2,17 @@ import express from 'express';
 import cors from 'cors';
 import Routes from './routes/route.js';
 import bodyParser from 'body-parser';
+import Connection from './database/db.js';
 import multer from 'multer';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import helmet from 'helmet';
 import morgan  from 'morgan';
-import Connection from './database/db.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 
-
+// Configurations
 
 
 
