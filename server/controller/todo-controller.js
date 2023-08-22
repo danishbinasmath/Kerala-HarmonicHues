@@ -7,9 +7,7 @@ export const addTodo = async (request, response) => {
             data: request.body.data,
             createdAt: Date.now()
         })
-    
         await newTodo.save();
-    
         response.status(200).json(newTodo);
     } catch(error) {
         return response.status(500).json(error.message);
