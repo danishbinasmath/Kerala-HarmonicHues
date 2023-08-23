@@ -1,6 +1,5 @@
 import express from 'express';
 import cors from 'cors';
-import { register } from "./controller/auth.js"
 import Routes from './routes/route.js';
 import bodyParser from 'body-parser';
 import Connection from './database/db.js';
@@ -11,6 +10,9 @@ import helmet from 'helmet';
 import morgan  from 'morgan';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import authRoutes from "./routes/auth.js";
+import userRoutes from "./routes/route.js";
+import { register } from "./controller/auth.js";
 
 
 /* CONFIGURATION */
@@ -40,9 +42,14 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
-  
+
 /* ROUTES WITH FILES */
 app.post("/auth/register", upload.single("picture"), register)
+
+/* ROUTES */
+app.use("/auth", authRoutes);
+app.use("/users", userRoutes);
+app
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
