@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import Routes from './routes/route.js';
 import bodyParser from 'body-parser';
-import Connection from './database/db.js';
+// import Connection from './database/db.js';
 import multer from 'multer';
 import dotenv from 'dotenv';
 import mongoose, { Mongoose } from 'mongoose';
@@ -12,8 +12,10 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/route.js";
+import postRoutes from "./routes/post.js";
 import { register } from "./controller/auth.js";
-
+import { createPost } from "./controller/posts.js";
+import { verifyToken } from "./middleware/auth.js";
 
 /* CONFIGURATION */
 const __filename = fileURLToPath(import.meta.url)
@@ -44,12 +46,14 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 /* ROUTES WITH FILES */
-app.post("/auth/register", upload.single("picture"), register)
+app.post("/auth/register", upload.single("picture"), register);
+app.post("/posts", verifyToken, upload.single("picture"), createPost);
+
 
 /* ROUTES */
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
-app
+app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
