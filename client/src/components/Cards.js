@@ -50,7 +50,7 @@ export default function ActionAreaCard() {
       <div className="cards-container">
 
         <Card sx={{ maxWidth: 345 }}>
-          <Link to="/Quote" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/keralacommunity" style={{ textDecoration: 'none', color: 'inherit' }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -134,6 +134,27 @@ export default function ActionAreaCard() {
               </Typography>
             </CardContent>
           </CardActionArea>
+        </Card>
+
+        <Card sx={{ maxWidth: 345 }}>
+          <Link to="/Quote" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="220"
+                image={quoteLogo}
+                alt="ASAP Logo"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  <h2>Quote of the Day</h2>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <h6>A quote to motivate you.</h6>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Link>
         </Card>
 
         <Card sx={{ maxWidth: 345 }}>
