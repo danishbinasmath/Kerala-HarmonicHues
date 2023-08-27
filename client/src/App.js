@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import Cards from './components/Cards';
 import Asap from './components/Asap';
@@ -23,6 +23,7 @@ import { themeSettings } from "./theme";
 function App() {
   const mode = useSelector((state) => state.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+  const isAuth = Boolean(useSelector((state) => state.token));
 
   return (
     <Router>
@@ -40,8 +41,8 @@ function App() {
             <Route path="/postoffice1" element={<PostOffice1 />} />
             <Route path="/postoffice2" element={<PostOffice2 />} />
             <Route path='/loginpage' element={<LoginPage />} />
-            <Route path='/home' element={<HomePage />} />
-            <Route path='/profile/:userId' element={<ProfilePage />} />
+            <Route path='/home' element={isAuth ? <HomePage /> : <Navigate to="/loginpage"/>} />
+            <Route path='/profile/:userId' element={isAuth ? <ProfilePage /> : <Navigate to="/loginpage"/>} />
           </Routes>
         </ThemeProvider>
       </div>
