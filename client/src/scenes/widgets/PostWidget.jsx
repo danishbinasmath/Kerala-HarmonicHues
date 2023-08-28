@@ -6,7 +6,7 @@ import {
   } from "@mui/icons-material";
   import { Box, Divider, IconButton, Typography, useTheme } from "@mui/material";
   import FlexBetween from "components/KeralaCommunity/FlexBetween";
-  import Friend from "components/Friend";
+  import Friend from "components/KeralaCommunity/Friend";
   import WidgetWrapper from "components/KeralaCommunity/WidgetWrapper";
   import { useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
