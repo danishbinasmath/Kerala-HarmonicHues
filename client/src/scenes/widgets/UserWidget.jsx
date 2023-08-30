@@ -11,6 +11,8 @@ import WidgetWrapper from "components/KeralaCommunity/WidgetWrapper";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import twitterLogo from "../../components/images/twitter.png";
+import linkedin from "../../components/images/linkedin.png";
 
 const UserWidget = ({ userId, picturePath }) => {
   const [user, setUser] = useState(null);
@@ -120,7 +122,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
         <FlexBetween gap="1rem" mb="0.5rem">
           <FlexBetween gap="1rem">
-            <img src="../assets/twitter.png" alt="twitter" />
+            <img src={twitterLogo} alt="twitter" />
             <Box>
               <Typography color={main} fontWeight="500">
                 Twitter
@@ -133,7 +135,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
         <FlexBetween gap="1rem">
           <FlexBetween gap="1rem">
-            <img src="../assets/linkedin.png" alt="linkedin" />
+            <img src={linkedin} alt="linkedin" />
             <Box>
               <Typography color={main} fontWeight="500">
                 Linkedin
@@ -148,4 +150,4 @@ const UserWidget = ({ userId, picturePath }) => {
   );
 };
 
-export default UserWidget;  
+export default UserWidget;

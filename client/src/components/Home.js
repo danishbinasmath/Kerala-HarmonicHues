@@ -6,17 +6,9 @@ function Home() {
     return (
         <>
             <nav className="navbar">
-                {/* <div className="container">
-                    <div className="navbar-brand">
-                        <a href="#">Kerala HarmonicHues</a>
-                    </div>
-                    <ul className="navbar-nav">
-                        <li className="nav-item"><a href="#">Home</a></li>
-                        <li className="nav-item"><a href="#">About</a></li>
-                        <li className="nav-item"><a href="#">Services</a></li>
-                        <li className="nav-item"><a href="#">Contact</a></li>
-                    </ul>
-                </div> */}
+                 <div className="container">
+                    
+                </div> 
             </nav>
 
             <section className="hero">
@@ -36,21 +28,21 @@ function Home() {
                             <div className="feature">
                                 <i className="fas fa-home"></i>
                                 <h3>Providing with the latest information of Kerala</h3>
-                                <p>Search about the validation and verification you have to do.</p>
+                                <p>Get the Kerala News, Kerala Fuel Prices, Kerala Post Office </p>
                             </div>
                         </div>
                         <div className="">
                             <div className="feature">
                                 <i className="fas fa-lightbulb"></i>
-                                <h3>By using 27 API</h3>
-                                <p>It will provide user with a lot of data.</p>
+                                <h3>By using 4 API</h3>
+                                <p>The data of latest Petrol, Diesal and LPG prices, search the details of Post Office by searching Postal PIN Code or Post Office Branch Name of Kerala, the latest Kerala News and Quote Api.</p>
                             </div>
                         </div>
                         <div className="">
                             <div className="feature">
                                 <i className="fas fa-cog"></i>
-                                <h3>Customized Settings</h3>
-                                <p>Set your information preferences.</p>
+                                <h3>Kerala Community Page</h3>
+                                <p>A page where people can share about events of kerala with image and description, People can make friends and also like the post and also visit the pages of Kerala Community Poeple.</p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +51,7 @@ function Home() {
 
             <footer className="footer">
                 <div className="container">
-                    <p>&copy; Kerala HarmonicHues</p>
+                    <p>&copy; Muhammad Danish (Computer Science Student)</p>
                 </div>
             </footer>
         </>
