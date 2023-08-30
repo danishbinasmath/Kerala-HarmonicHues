@@ -1,6 +1,6 @@
 .navbar {
     background-color: #4CAF50;
-    /* light forest green */
+    padding: 100px;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,6 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    /* push items to the right */
 }
 
 .nav-item:not(:last-child) {
@@ -45,7 +44,6 @@
 .startButton {
     display: inline-block;
     background-color: #4CAF50;
-    /* light forest green */
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
@@ -55,7 +53,6 @@
 
 .startButton:hover {
     background-color: #3e8e41;
-    /* darker green on hover */
 }
 
 .features {

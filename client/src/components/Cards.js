@@ -8,14 +8,11 @@ import { CardActionArea } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import SearchIconWrapper from '@mui/icons-material/Search';
 import StyledInputBase from '@mui/material/InputBase';
-import asapLogo from './images/asap-logo.png';
-import ksrtc from './images/ksrtc-logo.jpg';
 import quoteLogo from './images/quote-logo.png';
-import ksebLogo from './images/kseb-logo.png';
 import newsLogo from './images/news-logo.png'
 import fuelpriceLogo from './images/fuelprice-logo.png'
-import rationcardLogo from './images/rationcard-logo.png';
 import postofficeLogo from './images/postoffice-logo.png';
+import keralacommunityLogo from './images/keralacommunity-logo.png'
 import { Link } from 'react-router-dom';
 // import { useState } from 'react';
 
@@ -26,7 +23,6 @@ export default function ActionAreaCard() {
     <>
 
       {/* //020e1d283ee64b97bf32b788a9f44003 new api key */}
-
 
       <div>
         <h1 className='heading'>Kerala HarmonicHues</h1>
@@ -50,20 +46,20 @@ export default function ActionAreaCard() {
       <div className="cards-container">
 
         <Card sx={{ maxWidth: 345 }}>
-          <Link to="/keralacommunity" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 height="220"
-                image={quoteLogo}
+                image={keralacommunityLogo}
                 alt="ASAP Logo"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  <h2>Quote of the Day</h2>
+                  <h2>Kerala Community</h2>
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  <h6>A quote to motivate you.</h6>
+                  A community page for posting the events about kerala. People can also become friends and like the post of any people.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -150,99 +146,12 @@ export default function ActionAreaCard() {
                   <h2>Quote of the Day</h2>
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  <h6>A quote to motivate you.</h6>
+                  A quote to motivate you.
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Link>
         </Card>
-
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <a href="https://wss.kseb.in/selfservices/quickpay">
-              <CardMedia
-                component="img"
-                // height="220"
-                image={ksebLogo}
-                alt="ASAP Logo"
-                className='ksebCard'
-              />
-            </a>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                KSEB
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To pay the bills of Electricity.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <a href="https://www.aanavandi.com/">
-              <CardMedia
-                component="img"
-                height="220"
-                image={ksrtc}
-                alt="ASAP Logo"
-              />
-            </a>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                KSRTC Schedule
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To check Bus timings of KSRTC and also to book Bus tickets.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-
-        <Card sx={{ maxWidth: 345 }}>
-          <Link to="/Asap" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="220"
-                image={asapLogo}
-                alt="ASAP Logo"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Kerala ASAP validation
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  To validate the certification provided by Kerala Government by the programme Additional Skill Acquisition Programme (ASAP), Kerala (3.0.0)
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Link>
-        </Card>
-
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <a href="https://etso.civilsupplieskerala.gov.in/index.php/c_checkrcard_details">
-              <CardMedia
-                component="img"
-                height="220"
-                image={rationcardLogo}
-                alt="ASAP Logo"
-                className='ksebCard'
-              />
-            </a>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kerala Ration Card
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                To verify Ration Card.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-
 
       </div>
     </>
