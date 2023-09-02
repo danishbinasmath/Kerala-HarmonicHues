@@ -6,6 +6,8 @@ const FuelPrice = () => {
     const [Petrolprice, setPetrolprice] = useState(0);
     const [Dieselprice, setDieselprice] = useState(0);
     const [LPGprice, setLPGprice] = useState(0);
+    const [Date, setDate] = useState('');
+
 
     const getPrice = () => {
         const headers = {
@@ -16,7 +18,7 @@ const FuelPrice = () => {
         axios.get('https://daily-petrol-diesel-lpg-cng-fuel-prices-in-india.p.rapidapi.com/v1/fuel-prices/today/india/kerala', { headers })
             .then(res => {
                 // console.log(res.data.fuel.petrol.retailPrice);
-                console.log(res.data)
+                setDate(res.data.applicableOn);
                 setPetrolprice(res.data.fuel.petrol)
                 setDieselprice(res.data.fuel.diesel)
                 setLPGprice(res.data.fuel.lpg)
@@ -31,11 +33,17 @@ const FuelPrice = () => {
 
             <div className='container'>
 
-                <div className="FuelPrice-container button-88">
+                <div className="FuelPrice-container">
                     <h1> Kerala Fuel Prices for Petrol, Diesal and LPG of Kerala </h1>
                 </div>
 
                 <button className='fuelButton' onClick={getPrice}>Click Here to Know the Price</button>
+
+
+                <div className='date'>
+                    <p>Date of the update: {Date.split('-').reverse().join('-')}</p>
+                </div>
+
 
                 <div className='card petrolCard'>
                     <h3>Price of Petrol is: {Petrolprice.retailPrice} {Petrolprice.currency}</h3>

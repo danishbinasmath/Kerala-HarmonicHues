@@ -141,7 +141,7 @@ export const posts = [
     lastName: "Luffy",
     location: "Thiruvananthapuram, Kerala",
     description:
-      "Fun Fact: Kerala receives India’s first rainfall Kerala gets the first spell of rains in India. While the rest of the nation experiences rain in July, Kerala witnesses it around the first week of June every year followed by Mumbai and Delhi.",
+      "Fun Fact: Kerala receives India’s first rainfall. Kerala gets the first spell of rains in India. While the rest of the nation experiences rain in July, Kerala witnesses it around the first week of June every year followed by Mumbai and Delhi.",
     picturePath: "post3.jpg",
     userPicturePath: "p3.jpeg",
     likes: new Map([

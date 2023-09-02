@@ -1,35 +1,49 @@
-/* body {
-    background: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
-} */
-
 .quoteContainer {
     padding: 100px;
     margin: 10px;
     align-items: center;
 }
 
-.quotePtag {
-    color: #9733EE;
-    font-family: "Lucida Console", "Courier New", monospace;
-}
-         
-.btn-grad {
-    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+ .quoteButton {
+    width: 9em;
+    height: 3em;
     margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-  }
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
 
-  .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
+.quoteButton::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.quoteButton:hover::before {
+    width: 9em;
+}
+
+.quoteH1 {
+    margin-bottom: 10px;
+}
+
+.quoteP,
+.quoteH3 {
+    margin: 30px;
+} 
+
+    
  
