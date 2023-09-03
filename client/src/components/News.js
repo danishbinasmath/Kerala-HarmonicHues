@@ -10,28 +10,29 @@ const News = () => {
     //https://newsapi.org/v2/top-headlines?apiKey=020e1d283ee64b97bf32b788a9f44003&q=sports
 
     const getNews = () => {
-        
+
         axios.get('https://newsapi.org/v2/everything?q=kerala&apiKey=a8eeeb3c01004f8c9985cc108fbe74db')
-        .then(
-            res => {
-                console.log(res.data.articles)
-                setNews(res.data.articles)
-            }
-        )
-        .catch(
-            err => {
-                console.log(err)
-            }
-        )
+            .then(
+                res => {
+                    // console.log(res.data.articles)
+                    setNews(res.data.articles)
+                }
+            )
+            .catch(
+                err => {
+                    console.log(err)
+                }
+            )
     }
 
-    
 
     return (
         <>
             <div className="container my-3">
                 <button className="newsButton" onClick={getNews}> Click Here to get the Latest News</button>
+                <button className="newsButton" onClick={getNewss}> Bing news</button>
             </div>
+
 
             <div className="container">
                 <div className="row">
