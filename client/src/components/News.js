@@ -30,7 +30,6 @@ const News = () => {
         <>
             <div className="container my-3">
                 <button className="newsButton" onClick={getNews}> Click Here to get the Latest News</button>
-                <button className="newsButton" onClick={getNewss}> Bing news</button>
             </div>
 
 
