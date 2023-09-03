@@ -27,7 +27,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const patchFriend = async () => {
     if (canAddFriend) {
       const response = await fetch(
-        `http://localhost:3001/users/${_id}/${friendId}`,
+        `https://keralaharmonichues-server.onrender.com/users/${_id}/${friendId}`,
         {
           method: "PATCH",
           headers: {
