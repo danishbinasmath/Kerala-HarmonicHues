@@ -55,6 +55,19 @@
     background-color: #3e8e41;
 }
 
+.homeButton {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 5px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.homeButton:hover {
+    background-color: #3e8e41;
+}
+
 .features {
     background-color: #fff;
     text-align: center;
