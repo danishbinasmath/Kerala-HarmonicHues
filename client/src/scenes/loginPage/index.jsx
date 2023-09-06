@@ -1,5 +1,7 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
+import { Link } from 'react-router-dom';
+
 
 const LoginPage = () => {
     const theme = useTheme();
@@ -13,9 +15,12 @@ const LoginPage = () => {
                 textAlign="center"
             >
                 <Typography fontWeight="bold" fontSize="32px" color="primary">
-                    Kerala Community 
+                    Kerala Community
                 </Typography>
+                <Link to="/" className="homeButton">Home Page</Link>
             </Box>
+
+
 
             <Box
                 width={isNonMobileScreens ? "50%" : "93%"}
