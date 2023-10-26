@@ -56,7 +56,7 @@ export default function ActionAreaCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  <h2>Kerala Community</h2>
+                  Kerala Community
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   A community page for posting the events about kerala. People can also become friends and like the post of any people.
@@ -143,7 +143,7 @@ export default function ActionAreaCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  <h2>Quote of the Day</h2>
+                  Quote of the Day
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   A quote to motivate you.
