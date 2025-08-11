@@ -37,15 +37,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cards" element={<Cards />} />
+          <Route path="/quote" element={<Quote />} />
           <Route path="/news" element={<News />} />
           <Route path="/fuelprice" element={<FuelPrice />} />
           <Route path="/postoffice3" element={<PostOffice3 />} />
-          <Route path="/quote" element={<Quote />} />
-          <Route path="/quote" element={<Quote />} />
-          <Route path="/quote" element={<Quote />} />
-          <Route path="/quote" element={<Quote />} />
-          <Route path="/quote" element={<Quote />} />
-          <Route path="/quote" element={<Quote />} />
           <Route path="/postoffice1" element={<PostOffice1 />} />
           <Route path="/postoffice2" element={<PostOffice2 />} />
           <Route path='/loginpage' element={<ThemedRoute><LoginPage /></ThemedRoute>} />
